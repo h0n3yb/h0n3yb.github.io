@@ -8,7 +8,7 @@ date: 2024-01-08
 
 Voice AI agents are extremely good now. They actually listen to your words, and respond with very little lag. This opens the door to many use cases which were previously not feasible with rigid robo-menu sounding systems. Combine this level of quality with the ability to use tools, and now all of a sudden we have a viable voice-powered AI agent which can execute complex tasks.
 
-This guide explains how to build a voice agent that can independently access multiple tools and make decisions based on the conversation context during sales lead qualification, appointment scheduling, and customer support.
+This guide explains how to build a voice agent that can independently access multiple tools and make decisions during sales outreach, customer support, and internal operations.
 
 <img src="/assets/images/Core Architecture - visual selection.png" alt="Alt text" width="600"/>
 
@@ -24,9 +24,11 @@ The system combines several key components:
 ### ElevenLabs Voice Agent Setup
 1. Create a new agent in the ElevenLabs Conversational AI menu
 
-2. Configure initial greeting message. If your agent will be doing outreach, you can leave this blank, and the agent will speak once the user says: "Hello?".
+2. Configure the initial greeting message. If your agent will be doing outreach, you can leave this blank, and the agent will speak once the user says "Hello?".
 
-3. Set your system prompt with tool definitions. You'll want to follow a generate pattern like this:
+3. Create a system prompt that includes tool definitions. 
+
+You'll want to follow a generate pattern like this:
 
 ```text
 You are a support agent with access to:
@@ -43,18 +45,18 @@ Here's how to use your tools:
 - Use Google sheets to catalog what happened in the conversation.
 ```
 
-4. Configure webhook URL for external tool access -- this is agnostic to the tools you're using. Many automation tools will have a webhook system which you can use to trigger your agent.
+4. Configure the webhook URL for external tool access -- this is agnostic to the tools you're using. Many automation tools will have a webhook system which you can use to trigger your agent.
 
-5. Select GPT-4 or another model of similar quality (I like Claude 3.5 Sonnet v2).
+5. Select a frontier-quality LLM. I prefer Claude 3.5 Sonnet v2, but ChatGPT-4-turbo or Google Gemini are also great).
 
 ### Vector Database Configuration
-1. Prepare knowledge base documents.  Gather all your key resources like your website content, FAQs, and documentation - basically anything you want your agent to know about.
+1. Prepare your knowledge base documents.  Gather all your key resources like your website content, FAQs, and documentation - basically anything you want your agent to know about.
 
-2. Process documents into embeddings. Transform your documents into a special format that helps your agent understand and work with them efficiently.
+2. Process your documents into embeddings. Transform your documents into a special format that helps your agent understand and work with them efficiently.
 
-3. Store in vector database (e.g., Pinecone). Think of this as your agent's organized library of information.
+3. Store the embeddings in a vector database (e.g., Pinecone). Think of this as your agent's organized library of information.
 
-4. Configure query endpoint. Set up the connection point where your agent can quickly search through all that knowledge.
+4. Configure the query endpoint. Set up the connection point where your agent can quickly search through your knowledgebase.
 
 5. Test retrieval with sample queries. Run some practice searches to make sure your agent can find what it needs.
 
@@ -63,13 +65,13 @@ Here's how to use your tools:
 ### Calendar Integration
 1. Set up Google Calendar API access. Get your agent connected to Google Calendar using oauth - it's like giving your agent permission to manage your schedule.
 
-2. Create dedicated calendar for appointments. Give your agent its own calendar to keep things neat and organized.
+2. Create a dedicated calendar for appointments. Give your agent its own calendar to keep things neat and organized.
 
-3. Configure availability checking endpoint. Build a way for your agent to quickly check when you're free or busy.
+3. Configure the availability checking endpoint. Build a way for your agent to quickly check when you're free or busy.
 
-4. Set up appointment creation endpoint. Create the tool your agent needs to actually schedule meetings.
+4. Set up the appointment creation endpoint. Create the tool your agent needs to actually schedule meetings.
 
-5. Implement email notification system. Make sure everyone stays in the loop with automatic emails when appointments are booked.
+5. Implement an email notification system. Make sure everyone stays in the loop with automatic emails when appointments are booked.
 
 ### Customer Data Storage
 1. Set up a customer database in Google Sheets with key info columns:
@@ -79,9 +81,9 @@ Here's how to use your tools:
    - Appointment Time
    - Notes
 
-2. Get your agent access to Google Sheets through their API
+2. Get your agent access to Google Sheets through their API.
 
-3. Create a simple way to add new customer records
+3. Run some practice queries to make sure your agent can add new customer records.
 
 ### Webhook Setup
 
@@ -104,17 +106,13 @@ Here's how to use your tools:
 }
 ```
 
-### Tool Router Configuration
-1. Build your central decision-making system
-
-2. Map out key phrases to recognize:
+### Tool Usage
+1. Map out key phrases for the agent to recognize:
    - Scheduling words: "schedule", "book", "availability"
    - Questions: "what", "how", "tell me about"
    - Contact management: "save", "store", "remember"
 
-3. Connect these phrases to the right tools
-
-4. Plan for when things don't go as expected
+3. Connect these phrases to the right tools by associating the tool name with the phrase in your ElevenLabs agent.
 
 ### Response Management
 1. Make responses sound natural in spoken form
@@ -127,12 +125,10 @@ Here's how to use your tools:
 
 3. Keep conversations flowing naturally
 
-4. Remember important details throughout the chat
-
 ### Testing
-1. Check each tool works on its own
+1. Make sure each tool works on its own
 
-2. Make sure voice quality is crystal clear
+2. If you can, use a cloned voice instead of a stock one from ElevenLabs. This will help your agent sound more human and natural, but make sure your microphone is good, because the cloned voice quality will sound like your microphone's quality.
 
 3. Test complete conversations for:
    - Finding information
@@ -140,8 +136,6 @@ Here's how to use your tools:
    - Saving contact details
 
 4. See how it handles mistakes
-
-5. Make sure it can juggle multiple tasks
 
 # Now it's your turn! 
 
