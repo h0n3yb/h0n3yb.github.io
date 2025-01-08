@@ -1,3 +1,9 @@
+---
+layout: post
+title: "Building Multi-Tool Voice AI Agents with ElevenLabs"
+date: 2025-07-01
+---
+
 ## Building Multi-Tool Voice AI Agents with ElevenLabs
 
 Voice AI agents are becoming increasingly capable of handling complex operations through tool integration. This guide explains how to build a voice agent that can independently access multiple tools and make decisions based on conversation context.
