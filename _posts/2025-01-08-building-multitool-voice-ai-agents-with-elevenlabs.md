@@ -23,7 +23,9 @@ The system combines several key components:
 
 ### ElevenLabs Voice Agent Setup
 1. Create a new agent in the ElevenLabs Conversational AI menu
+
 2. Configure initial greeting message. If your agent will be doing outreach, you can leave this blank, and the agent will speak once the user says: "Hello?".
+
 3. Set your system prompt with tool definitions. You'll want to follow a generate pattern like this:
 
 ```text
@@ -42,20 +44,29 @@ Here's how to use your tools:
 ```
 
 4. Configure webhook URL for external tool access -- this is agnostic to the tools you're using. Many automation tools will have a webhook system which you can use to trigger your agent.
+
 5. Select GPT-4 or another model of similar quality (I like Claude 3.5 Sonnet v2).
 
 ### Vector Database Configuration
 1. Prepare knowledge base documents.  Gather all your key resources like your website content, FAQs, and documentation - basically anything you want your agent to know about.
+
 2. Process documents into embeddings. Transform your documents into a special format that helps your agent understand and work with them efficiently.
+
 3. Store in vector database (e.g., Pinecone). Think of this as your agent's organized library of information.
+
 4. Configure query endpoint. Set up the connection point where your agent can quickly search through all that knowledge.
+
 5. Test retrieval with sample queries. Run some practice searches to make sure your agent can find what it needs.
 
 ### Calendar Integration
 1. Set up Google Calendar API access. Get your agent connected to Google Calendar using oauth - it's like giving your agent permission to manage your schedule.
+
 2. Create dedicated calendar for appointments. Give your agent its own calendar to keep things neat and organized.
+
 3. Configure availability checking endpoint. Build a way for your agent to quickly check when you're free or busy.
+
 4. Set up appointment creation endpoint. Create the tool your agent needs to actually schedule meetings.
+
 5. Implement email notification system. Make sure everyone stays in the loop with automatic emails when appointments are booked.
 
 ### Customer Data Storage
@@ -65,13 +76,18 @@ Here's how to use your tools:
    - Email
    - Appointment Time
    - Notes
+
 2. Get your agent access to Google Sheets through their API
+
 3. Create a simple way to add new customer records
 
 ### Webhook Setup
 1. Build your main connection point
+
 2. Give it a clear address: `/voice-agent`
+
 3. Make it ready to receive POST requests
+
 4. Use this format for incoming messages:
 ```json
 {
@@ -85,31 +101,41 @@ Here's how to use your tools:
 
 ### Tool Router Configuration
 1. Build your central decision-making system
+
 2. Map out key phrases to recognize:
    - Scheduling words: "schedule", "book", "availability"
    - Questions: "what", "how", "tell me about"
    - Contact management: "save", "store", "remember"
+
 3. Connect these phrases to the right tools
+
 4. Plan for when things don't go as expected
 
 ### Response Management
 1. Make responses sound natural in spoken form
+
 2. Structure your conversation flow:
    - Acknowledge what was asked
    - Handle the request
    - Confirm what was done
    - Guide to next steps
+
 3. Keep conversations flowing naturally
+
 4. Remember important details throughout the chat
 
 ### Testing
 1. Check each tool works on its own
+
 2. Make sure voice quality is crystal clear
+
 3. Test complete conversations for:
    - Finding information
    - Booking appointments
    - Saving contact details
+
 4. See how it handles mistakes
+
 5. Make sure it can juggle multiple tasks
 
 # Now it's your turn! 
