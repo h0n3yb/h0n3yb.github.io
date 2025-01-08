@@ -58,6 +58,8 @@ Here's how to use your tools:
 
 5. Test retrieval with sample queries. Run some practice searches to make sure your agent can find what it needs.
 
+<img src="/assets/images/Vector Database Configuration - visual selection.png" alt="Alt text" width="600"/>
+
 ### Calendar Integration
 1. Set up Google Calendar API access. Get your agent connected to Google Calendar using oauth - it's like giving your agent permission to manage your schedule.
 
@@ -82,6 +84,9 @@ Here's how to use your tools:
 3. Create a simple way to add new customer records
 
 ### Webhook Setup
+
+<img src="/assets/images/webhook- visual selection.png" alt="Alt text" width="600"/>
+
 1. Build your main connection point
 
 2. Give it a clear address: `/voice-agent`
