@@ -28,7 +28,7 @@ The system combines several key components:
 
 3. Create a system prompt that includes tool definitions. 
 
-You'll want to follow a generate pattern like this:
+You'll want to follow a general pattern like this:
 
 ```text
 You are a support agent with access to:
