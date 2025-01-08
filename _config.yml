@@ -22,6 +22,11 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
 
+titles_from_headings:
+  enabled: true
+  strip_title: true
+  collections: true
+
 defaults:
   - scope:
       path: ""
