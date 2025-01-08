@@ -11,6 +11,8 @@ The system combines several key components:
 - Google Sheets for data storage
 - Webhook system for tool orchestration
 
+![Alt text](/assets/images/Core Architecture - visual selection.png)
+
 ## Implementation
 
 ### 1. ElevenLabs Voice Agent Setup
@@ -122,4 +124,4 @@ You are a support agent with access to:
 
 ## We build systems like these, and more 
 
-Visit [helosolutions.ai](https://helosolutions.ai) to get in touch.
+**Visit [helosolutions.ai](https://helosolutions.ai) to get in touch.**
