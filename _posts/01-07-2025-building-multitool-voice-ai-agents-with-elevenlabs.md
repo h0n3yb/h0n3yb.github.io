@@ -11,7 +11,7 @@ The system combines several key components:
 - Google Sheets for data storage
 - Webhook system for tool orchestration
 
-![Alt text](/assets/images/Core Architecture - visual selection.png)
+<img src="/assets/images/Core Architecture - visual selection.png" alt="Alt text" width="600"/>
 
 ## Implementation
 
