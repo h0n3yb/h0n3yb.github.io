@@ -1,4 +1,4 @@
-Gaining leverage with AI
+Knowledge wants to be free
 
 ## Latest Posts
 
