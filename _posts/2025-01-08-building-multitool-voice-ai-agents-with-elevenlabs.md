@@ -123,6 +123,7 @@ Here's how to use your tools:
    - Confirm what was done
    - Guide to next steps
 
+
 3. Keep conversations flowing naturally
 
 ### Testing
@@ -134,6 +135,7 @@ Here's how to use your tools:
    - Finding information
    - Booking appointments
    - Saving contact details
+
 
 4. See how it handles mistakes
 
