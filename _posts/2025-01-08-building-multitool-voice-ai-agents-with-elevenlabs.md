@@ -29,7 +29,8 @@ The system combines several key components:
 1. Create a new agent in the ElevenLabs Conversational AI menu
 2. Configure initial greeting message. If your agent will be doing outreach, you can leave this blank, and the agent will speak once the user says: "Hello?".
 3. Set your system prompt with tool definitions. You'll want to follow a generate pattern like this:
-```
+
+<code>
 You are a support agent with access to:
 - Calendar for checking appointment availability
 - Vector database for retrieving information
@@ -42,7 +43,8 @@ Here's how to use your tools:
 - Use the calendar if the user is asking about scheduling.
 - Use the vector database if the user is asking about information.
 - Use Google sheets to catalog what happened in the conversation.
-```
+</code>
+
 4. Configure webhook URL for external tool access -- this is agnostic to the tools you're using. Many automation tools will have a webhook system which you can use to trigger your agent.
 5. Select GPT-4 or another model of similar quality (I like Claude 3.5 Sonnet v2).
 
