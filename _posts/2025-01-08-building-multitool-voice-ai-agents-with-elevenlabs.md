@@ -28,7 +28,11 @@ The system combines several key components:
 
 3. Create a system prompt that includes tool definitions. 
 
-You'll want to follow a general pattern like this:
+4. Configure the webhook URL for external tool access -- this is agnostic to the tools you're using. Many automation tools will have a webhook system which you can use to trigger your agent.
+
+5. Select a frontier-quality LLM. I prefer Claude 3.5 Sonnet v2, but ChatGPT-4-turbo or Google Gemini are also great.
+
+For the system prompt, you'll want to follow a general pattern like this:
 
 ```text
 You are a support agent with access to:
@@ -44,10 +48,6 @@ Here's how to use your tools:
 - Use the vector database if the user is asking about information.
 - Use Google sheets to catalog what happened in the conversation.
 ```
-
-4. Configure the webhook URL for external tool access -- this is agnostic to the tools you're using. Many automation tools will have a webhook system which you can use to trigger your agent.
-
-5. Select a frontier-quality LLM. I prefer Claude 3.5 Sonnet v2, but ChatGPT-4-turbo or Google Gemini are also great).
 
 ### Vector Database Configuration
 1. Prepare your knowledge base documents.  Gather all your key resources like your website content, FAQs, and documentation - basically anything you want your agent to know about.
