@@ -10,8 +10,6 @@ Voice AI agents are extremely good now. They actually listen to your words, and 
 
 This guide explains how to build a voice agent that can independently access multiple tools and make decisions based on the conversation context during sales lead qualification, appointment scheduling, and customer support.
 
-## Building Blocks
-
 <img src="/assets/images/Core Architecture - visual selection.png" alt="Alt text" width="600"/>
 
 The system combines several key components:
@@ -21,8 +19,6 @@ The system combines several key components:
 - Google Sheets for data storage
 - Webhook system for kicking all of this off
 
-## Implementation
-
 <img src="/assets/images/agent-arch.png" alt="Alt text" width="600"/>
 
 ### ElevenLabs Voice Agent Setup
@@ -30,7 +26,7 @@ The system combines several key components:
 2. Configure initial greeting message. If your agent will be doing outreach, you can leave this blank, and the agent will speak once the user says: "Hello?".
 3. Set your system prompt with tool definitions. You'll want to follow a generate pattern like this:
 
-<code>
+```text
 You are a support agent with access to:
 - Calendar for checking appointment availability
 - Vector database for retrieving information
@@ -43,7 +39,7 @@ Here's how to use your tools:
 - Use the calendar if the user is asking about scheduling.
 - Use the vector database if the user is asking about information.
 - Use Google sheets to catalog what happened in the conversation.
-</code>
+```
 
 4. Configure webhook URL for external tool access -- this is agnostic to the tools you're using. Many automation tools will have a webhook system which you can use to trigger your agent.
 5. Select GPT-4 or another model of similar quality (I like Claude 3.5 Sonnet v2).
