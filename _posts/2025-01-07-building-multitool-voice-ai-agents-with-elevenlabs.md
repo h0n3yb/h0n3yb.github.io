@@ -116,23 +116,15 @@ Here's how to use your tools:
 
 # Parting Words
 
-The blueprint is drawn. Now it's your turn! Here are some tips for your journey:
+The blueprint is drawn, now it's your turn. Here are some final tips:
 
-## Voice Interaction
-Build conversations like you're crafting an experience. Keep responses crisp but complete.
+Build your agent like you're crafting an experience. Keep responses crisp and concise, but complete. Your tools are only as reliable as your weakest link. Log everything that happens in your flow. Simple systems survive; complex ones collapse, so make sure you have the visibility to see where things go wrong (spoiler: they will, but it's a natural part of the process).
 
-## Tool Integration
-Your tools are only as reliable as your weakest timeout. Cache strategically. Log relentlessly. Know your API limits before they know you. Simple systems survive; complex ones collapse.
+On security: your endpoints are your fortress walls - guard them well. Trust no input, verify everything. Audit your attack surface regularly.
 
-## Security
-Your endpoints are your fortress walls - guard them well. Trust no input, verify everything. Clean data is happy data. And remember: security isn't an event, it's a habit. Audit your attack surface regularly.
+Watch how your creation speaks and operates. Learn from its stumbles. Keep its knowledge fresh. The best systems aren't built - they're grown. Start small, iterate fast, break things, and I promise your expectations will converge with reality. 
 
-## Maintenance
-Watch how your creation speaks. Learn from its stumbles. Keep its knowledge fresh. Patterns that worked yesterday might not serve tomorrow. Evolution is constant.
-
-The best systems aren't built - they're grown. Start small, iterate fast, and let reality be your guide. 
-
-Now go build something awesome. 🚀
+Let me know what you build and feel free to reach out to me on X (https://x.com/alexheloai).
 
 # Want us to build something like this for you?
 
