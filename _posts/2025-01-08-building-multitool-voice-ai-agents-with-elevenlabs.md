@@ -12,12 +12,7 @@ This guide explains how to build a voice agent that can independently access mul
 
 <img src="/assets/images/Core Architecture - visual selection.png" alt="Alt text" width="600"/>
 
-The system combines several key components:
-- ElevenLabs for voice interaction
-- Vector database for information retrieval
-- Google Calendar for appointment management
-- Google Sheets for data storage
-- Webhook system for kicking all of this off
+The system combines a couple of components:
 
 <img src="/assets/images/agent-arch.png" alt="Alt text" width="600"/>
 
