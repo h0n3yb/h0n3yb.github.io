@@ -6,7 +6,7 @@ date: 2024-01-08
 
 ## Building Multi-Tool Voice AI Agents with ElevenLabs
 
-Voice AI agents are extremely good now. They actually listen to your words, and respond with very little lag. This opens the door to many use cases which were previously not feasible with rigid robo-menu sounding systems. Combine this level of quality with the ability to use tools, and now all of a sudden we have a viable voice-powered AI agent which can execute complex tasks.
+Voice AI agents are extremely good now. They actually listen to your words, and respond with very little lag. Combine this level of quality with the ability to use tools, and we have ourselves a viable voice-powered AI agent which can execute complex tasks.
 
 This guide explains how to build a voice agent that can independently access multiple tools and make decisions during sales outreach, customer support, and internal operations.
 
@@ -30,7 +30,7 @@ The system combines several key components:
 
 4. Configure the webhook URL for external tool access -- this is agnostic to the tools you're using. Many automation tools will have a webhook system which you can use to trigger your agent.
 
-5. Select a frontier-quality LLM. I prefer Claude 3.5 Sonnet v2, but ChatGPT-4-turbo or Google Gemini are also great.
+5. Select a frontier-quality LLM. I've found Gemini Flash 1.5 to have the best latency:quality ratio thus far.
 
 For the system prompt, you'll want to follow a general pattern like this:
 
@@ -143,12 +143,12 @@ Here's how to use your tools:
 
 Here are some final tips:
 
-Build your agent like you're crafting an experience. Keep responses crisp and concise, but complete. Your tools are only as reliable as your weakest link. Log everything that happens in your flow. Simple systems survive; complex ones collapse, so make sure you have the visibility to see where things go wrong (spoiler: they will, but it's a natural part of the process). On security: your endpoints are your fortress walls - guard them well. Trust no input, verify everything. Audit your attack surface regularly.
+Build your agent like you're crafting an experience. Keep responses crisp and concise, but complete. Your tools are only as reliable as your weakest link. Log everything that happens in your flow. Make sure you have sufficient visibility to understand where things go wrong (spoiler: they will). On security: your endpoints are your fortress walls - guard them well. Trust no input, verify everything, and audit your attack surface regularly.
 
-Watch how your agent speaks and operates. Keep its knowledge fresh. The best systems aren't built - they're grown. Start small, iterate fast, break things, and I promise your expectations will converge with reality. 
+Watch how your agent speaks and operates. Keep its knowledge fresh. Start small, iterate fast, break things, and I promise your expectations will converge with reality. 
 
-Show me what you build on X and feel free to reach out with questions: (https://x.com/alexheloai).
+Show me what you build on X and feel free to reach out with questions [@alexheloai](https://x.com/alexheloai).
 
-# Want us to build something like this for you?
+# Want us to build it for you?
 
 **Let's sync -- book a call @ [helosolutions.ai](https://helosolutions.ai)**
