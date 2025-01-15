@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Building Multi-Tool Voice AI Agents with ElevenLabs"
+title: "Build Your First Multi-Tool Voice Agent in One Day"
 date: 2024-01-08
 ---
 
-## Building Multi-Tool Voice AI Agents with ElevenLabs
+## Build Your First Multi-Tool Voice Agent in One Day
 
 Voice AI agents are extremely good now. They actually listen to your words, and respond with very little lag. Combine this level of quality with the ability to use tools, and we have ourselves a viable voice-powered AI agent which can execute complex tasks.
 
