@@ -55,7 +55,7 @@ Here's how to use your tools:
 
 5. Test retrieval with sample queries. Run some practice searches to make sure your agent can find what it needs.
 
-**NOTE**: You'll use embeddings if you're rolling your own workflow. If you're doing everything in ElevenLabs, you can skip this step and use the Knowledge Base section in your Agent configuration.
+**NOTE**: You'll use embeddings if you're rolling your own workflow. If you prefer to stick with ElevenLabs, you can skip this step and use the Knowledge Base section in your Agent configuration. Just know you will trade off some flexibility for ease of use.
 
 <img src="/assets/images/Vector Database Configuration - visual selection.png" alt="Alt text" width="600"/>
 
