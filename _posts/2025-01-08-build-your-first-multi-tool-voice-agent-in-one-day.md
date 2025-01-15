@@ -109,19 +109,7 @@ Here's how to use your tools:
    - Questions: "what", "how", "tell me about"
    - Contact management: "save", "store", "remember"
 
-3. Connect these phrases to the right tools by associating the tool name with the phrase in your ElevenLabs agent.
-
-### Response Management
-1. Make responses sound natural in spoken form
-
-2. Structure your conversation flow:
-   - Acknowledge what was asked
-   - Handle the request
-   - Confirm what was done
-   - Guide to next steps
-
-
-3. Keep conversations flowing naturally
+3. Connect these phrases to the right tools by associating the tool name with the phrase in your ElevenLabs agent's system prompt.
 
 ### Testing
 1. Make sure each tool works on its own
@@ -132,8 +120,7 @@ Here's how to use your tools:
    - Finding information
    - Booking appointments
    - Saving contact details
-
-
+<br>
 4. See how it handles mistakes
 
 # Your turn
