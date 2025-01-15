@@ -55,6 +55,8 @@ Here's how to use your tools:
 
 5. Test retrieval with sample queries. Run some practice searches to make sure your agent can find what it needs.
 
+**NOTE**: You'll use embeddings if you're rolling your own workflow. If you're doing everything in ElevenLabs, you can skip this step and use the Knowledge Base section in your Agent configuration.
+
 <img src="/assets/images/Vector Database Configuration - visual selection.png" alt="Alt text" width="600"/>
 
 ### Calendar Integration
@@ -134,16 +136,18 @@ Here's how to use your tools:
 
 4. See how it handles mistakes
 
-# Now it's your turn! 
+# Your turn
 
 Here are some final tips:
 
-Build your agent like you're crafting an experience. Keep responses crisp and concise, but complete. Your tools are only as reliable as your weakest link. Log everything that happens in your flow. Make sure you have sufficient visibility to understand where things go wrong (spoiler: they will). On security: your endpoints are your fortress walls - guard them well. Trust no input, verify everything, and audit your attack surface regularly.
+Build your agent like you're crafting an experience. Keep responses crisp and concise, but complete. Your tools are only as reliable as your weakest link. Log everything that happens in your flow. Make sure you have sufficient visibility to understand where things go wrong (it'll happen). 
 
-Watch how your agent speaks and operates. Keep its knowledge fresh. Start small, iterate fast, break things, and I promise your expectations will converge with reality. 
+On security: guard your endpoints well. Validate all inputs, and audit your attack surface regularly.
 
-Show me what you build on X and feel free to reach out with questions [@alexheloai](https://x.com/alexheloai).
+Start small, break things, iterate fast, and I promise your expectations will converge with reality. 
 
-# Want us to build it for you?
+Feel free to reach out with questions [@alexheloai](https://x.com/alexheloai).
+
+# Let us build it for you
 
 **Let's sync -- book a call @ [helosolutions.ai](https://helosolutions.ai)**
