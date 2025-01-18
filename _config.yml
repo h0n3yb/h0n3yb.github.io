@@ -8,8 +8,6 @@ logo: /assets/logo.png
 # Social Media
 twitter_username: "alexheloai"
 email: "alex@helosolutions.ai"
-linkedin_username: "your-linkedin"
-github_username: "your-github"
 
 # SEO Specific
 lang: en_US
@@ -17,8 +15,6 @@ social:
   name: Alex Ash
   links:
     - https://twitter.com/alexheloai
-    - https://www.linkedin.com/in/your-linkedin
-    - https://github.com/your-github
 
 # Jekyll SEO Tag
 twitter:
