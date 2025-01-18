@@ -19,7 +19,6 @@ The solution consists of Twilio for handling phone communication, ElevenLabs for
 You'll need a Twilio standard account (skip the trial), an ElevenLabs pro account, an n8n installation, and Google Calendar API access (OAuth2) through the Google Cloud Console.
 
 ## ElevenLabs Agent Configuration
-### 1. Agent Creation
 - Navigate to Conversational AI > Agents
 - Create a new agent
 - Set welcome message (keep it brief and professional)
@@ -63,7 +62,7 @@ Once all actions are done, ask if the caller needs anything else. If the caller 
 - Configure temperature (0.7/0.8 for natural responses)
 
 
-### 2. Knowledge Base Configuration
+### Knowledge Base
 
 Setup the knowledge base so that your assistant can access information that will be needed for repeated calls.
 
@@ -79,17 +78,17 @@ In my case, I wanted the agent to know my team's email, my own, and the notetake
   * Title: Company name notetaker
   * Value: Notetaker email
 
-### 3. Tool Implementation
+### Tools
 We'll set up two essential tools in the ElevenLabs interface for calendar management: one to check availability and another to book meetings. Both will integrate with Google Calendar through n8n.
 
-#### Setting Authentication
+#### Authentication
 
 Generate an API key for your webhook authentication. This will be used to secure communication between ElevenLabs and n8n.Store this key safely as you'll need it for both tools. Add it to the headers as:
 
 - Name: Authorization
 - Value: Bearer {API_KEY} 
 
-#### Check Availability Tool Configuration
+#### Tool 1: Check Meeting Availability
 
 Navigate to the Tools section in your ElevenLabs agent. Click "Add Tool" and select "Webhook". 
 
@@ -120,7 +119,7 @@ Request Body:
 }
 ```
 
-#### Book Meeting Tool Configuration
+#### Tool 2: Book a Meeting
 
 Click "Add Tool" again:
 
@@ -186,14 +185,14 @@ Tool Usage Guidelines:
 
 By following these steps, your ElevenLabs agent will be properly configured to handle both checking availability and booking meetings through your n8n webhook. The tools are secured with API key authentication and can handle various meeting scheduling scenarios. Remember to test each configuration step before moving forward, and maintain proper error handling throughout the implementation.
 
-## Voice Configuration
+## ElevenLabs Voice Settings
 For natural interaction:
 - Stability: 0.5 (midway point)
 - Similarity: 0.65
 - Latency: Level 3 for quick response time
 - Recommendation: Use a cloned voice with a high-quality microphone for best results
 
-## n8n Backend Implementation
+## n8n Implementation
 
 ### 1. Webhook Configuration
 ```javascript
@@ -270,13 +269,8 @@ While ElevenLabs credits can be consumed quickly (approximately 1 hour for setup
 
 Ready to build your own voice assistant? Start with these technical foundations and iterate based on your specific requirements. Remember, thorough testing and prompt engineering are key to a robust implementation.
 
-## Subscribe for More Technical Guides
-I regularly share detailed technical tutorials on AI implementation, automation workflows, and system integration. Subscribe for in-depth guides and best practices.
+I regularly share detailed technical tutorials on AI implementation, automation workflows, and system integration. Follow me on X [@alexheloai](https://x.com/alexheloai) for more.
 
-# Reach out with questions & comments
-
-[@alexheloai](https://x.com/alexheloai)
-
-# Want us to build it for you?
+# Want us to build a more advanced agent for you? 
 
 [Book a call with us](https://calendly.com/helo-solutions/30min)
