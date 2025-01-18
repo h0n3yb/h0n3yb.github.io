@@ -12,11 +12,11 @@ tags: [AI, Voice Assistant, Tutorial, Integration, Agents]
 
 # Step-by-Step Guide: Building a Voice-Powered Personal AI Assistant
 
-Ever wondered how to create a voice AI that can actually manage your calendar? I've recently built one combining ElevenLabs and n8n, and I'm excited to share the technical details of how you can build your own.
+I've recently built a voice-powered personal assistant via ElevenLabs and n8n. I thought it would be nice to call a phone number and setup a Google meet event without fumbling with Siri or "Hey Google", kind of like an actual EA. After going through the process and debugging, I dictated the whole thing to Claude so that I can show you how to build your own.
 
 The solution consists of Twilio for handling phone communication, ElevenLabs for powering the voice AI interface, and n8n for managing backend automation and calendar integration. This creates a seamless voice-controlled personal assistant capable of managing your calendar efficiently.
 
-You'll need a Twilio standard account (skip the trial), an ElevenLabs pro account, an n8n installation, and Google Calendar API access (OAuth2) through the Google Cloud Console.
+You'll need a Twilio account, an ElevenLabs pro account, an n8n installation, and Google Calendar API access (OAuth2) through the Google Cloud Console.
 
 ## ElevenLabs Agent Configuration
 ### 1. Agent Creation
