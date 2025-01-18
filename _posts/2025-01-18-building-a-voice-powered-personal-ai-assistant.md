@@ -21,7 +21,7 @@ You'll need a Twilio standard account (skip the trial), an ElevenLabs pro accoun
 
 Here is an example of a system prompt:
 
-```
+```plaintext
 You are a helpful and enthusiastic personal assistant for a consulting firm.
 
 You will receive calls from HELO executives and your job is to handle their requests.
