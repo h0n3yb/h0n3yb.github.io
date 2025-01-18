@@ -260,14 +260,9 @@ Follow this iterative testing approach:
 5. Debug tool calling logic
 6. Toggle between editor and executions view for real-time debugging
 
-## Cost and Performance Considerations
-While ElevenLabs credits can be consumed quickly (approximately 1 hour for setup and testing), the investment provides:
-- Practical voice AI experience
-- Reusable components for future voice-controlled projects
-- Scalable architecture
-- Alternative option: Consider using local models or wrapped frontier text models for a more cost-effective solution
+## Notes
 
-Ready to build your own voice assistant? Start with these technical foundations and iterate based on your specific requirements. Remember, thorough testing and prompt engineering are key to a robust implementation.
+ElevenLabs credits go quick (I burned through an hour of audio to make this guide), so test your backend via standard API calls when you can.
 
 I regularly share detailed technical tutorials on AI implementation, automation workflows, and system integration. Follow me on X [@alexheloai](https://x.com/alexheloai) for more.
 
