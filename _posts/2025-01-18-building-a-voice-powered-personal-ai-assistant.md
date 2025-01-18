@@ -242,8 +242,8 @@ Create Event Node:
   * summary: $fromAI("event_title")
 ```
 
-## Edge Case Handling
-Consider these critical scenarios:
+## Edge Cases
+Consider these scenarios:
 - Back-to-back meeting detection (15-minute buffer)
 - Meeting notification system (ensure sendUpdates: "all")
 - Date interpretation (relative vs. absolute)
@@ -251,7 +251,7 @@ Consider these critical scenarios:
 - System prompt specifications for conflict handling
 - Meeting overlap detection with clear definitions
 
-## Testing and Deployment Strategy
+## Debugging
 Follow this iterative testing approach:
 1. Activate n8n workflow
 2. Test voice interactions through ElevenLabs interface
