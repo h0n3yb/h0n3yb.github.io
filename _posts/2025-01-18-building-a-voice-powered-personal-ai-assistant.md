@@ -1,3 +1,15 @@
+---
+layout: post
+title: "Building a Voice-Powered Personal AI Assistant"
+description: "Step-by-step technical guide to building a voice AI assistant using ElevenLabs and n8n, with calendar integration and practical implementation tips."
+date: 2025-01-18
+image: /assets/images/social/helo-logo.jpg
+image_alt: "Voice AI Assistant Implementation Guide - Technical Architecture Diagram"
+author: Alex Ash
+keywords: voice ai, elevenlabs, n8n, ai assistant, calendar integration, automation, agents, ai agent
+tags: [AI, Voice Assistant, Tutorial, Integration, Agents, Agent]
+---
+
 # Step-by-Step Guide: Building a Voice-Powered Personal AI Assistant
 
 Ever wondered how to create a voice AI that can actually manage your calendar? I've recently built one combining ElevenLabs and n8n, and I'm excited to share the technical details of how you can build your own.
