@@ -2,8 +2,6 @@
 layout: home
 ---
 
-Knowledge wants to be free
-
 ## Latest Posts
 
 {% for post in site.posts %}
