@@ -74,19 +74,19 @@ We'll set up two essential tools in the ElevenLabs interface for calendar manage
 
 Generate an API key for your webhook authentication. This will be used to secure communication between ElevenLabs and n8n.Store this key safely as you'll need it for both tools. Add it to the headers as:
 
-Name: Authorization:
-Value: Bearer {API_KEY} 
+- Name: Authorization
+- Value: Bearer {API_KEY} 
 
 #### Check Availability Tool Configuration
 
 Navigate to the Tools section in your ElevenLabs agent. Click "Add Tool" and select "Webhook". 
 
-- CopyName: check_availability
+- Name: check_availability
 - Description: Check calendar for available meeting slots
 - Method: POST
 - URL: your_n8n_webhook_url/ai-assistant-voice
 
-Headers Setup:
+Headers:
 - Authorization: Bearer your_api_key
 - Content-Type: application/json
 
