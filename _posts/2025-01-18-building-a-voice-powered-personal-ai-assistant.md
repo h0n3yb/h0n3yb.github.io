@@ -7,7 +7,7 @@ image: /assets/images/social/helo-logo.jpg
 image_alt: "Voice AI Assistant Implementation Guide - Technical Architecture Diagram"
 author: Alex Ash
 keywords: voice ai, elevenlabs, n8n, ai assistant, calendar integration, automation, agents, ai agent
-tags: [AI, Voice Assistant, Tutorial, Integration, Agents, Agent]
+tags: [AI, Voice Assistant, Tutorial, Integration, Agents]
 ---
 
 # Step-by-Step Guide: Building a Voice-Powered Personal AI Assistant
