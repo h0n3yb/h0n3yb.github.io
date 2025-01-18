@@ -262,7 +262,7 @@ Follow this iterative testing approach:
 
 ## Notes
 
-ElevenLabs credits go quick (I burned through an hour of audio to make this guide), so test your backend via standard API calls when you can.
+ElevenLabs credits can go quick (I burned through an hour of audio to make this guide), so test your backend via standard API calls when you can.
 
 I regularly share detailed technical tutorials on AI implementation, automation workflows, and system integration. Follow me on X [@alexheloai](https://x.com/alexheloai) for more.
 
