@@ -4,6 +4,7 @@ author: "Alex Ash"
 description: "Agents and LLMs-in-the-stack"
 url: "https://alpha.helosolutions.ai"
 logo: /assets/logo.png
+image: /assets/images/social/helo-logo.jpg
 
 # Social Media
 twitter_username: "alexheloai"
@@ -20,6 +21,7 @@ social:
 twitter:
   username: alexheloai
   card: summary_large_image
+  image: /assets/images/social/helo-logo.jpg
 
 # Email / Social media user names used by the minima theme:
 # All of these are optional and can be removed or commented out
