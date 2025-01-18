@@ -20,6 +20,19 @@
   <meta name="keywords" content="{{ page.keywords }}">
   {% endif %}
   
+  <!-- Open Graph Additional -->
+  <meta property="og:site_name" content="{{ site.title }}">
+  {% if page.image %}
+  <meta property="og:image" content="{{ site.url }}{{ page.image }}">
+  {% endif %}
+  
+  <!-- Twitter Additional -->
+  <meta name="twitter:card" content="{% if page.image %}summary_large_image{% else %}summary{% endif %}">
+  <meta name="twitter:creator" content="@{{ site.twitter_username }}">
+  {% if page.image %}
+  <meta name="twitter:image" content="{{ site.url }}{{ page.image }}">
+  {% endif %}
+  
   <!-- Canonical URL -->
   {% if page.canonical_url %}
   <link rel="canonical" href="{{ page.canonical_url }}" />
