@@ -1,6 +1,5 @@
 # Building Your Own Voice AI Assistant: A Complete Guide
 
-*Estimated time to complete: 2-3 hours*
 *Difficulty level: Intermediate*
 
 ## The Future of Personal Assistance is Here
