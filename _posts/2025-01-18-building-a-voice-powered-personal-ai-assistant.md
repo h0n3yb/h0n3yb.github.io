@@ -1,12 +1,10 @@
 # Building Your Own Voice AI Assistant: A Complete Guide
 
-*Difficulty level: Intermediate*
+In this guide, I'll walk you through building your own voice AI assistant that can manage your calendar, handle meeting scheduling, and interact naturally with callers. We'll combine the power of ElevenLabs for voice AI, Twilio for phone communication, and n8n for backend automation.
 
 ## The Future of Personal Assistance is Here
 
 Remember when we thought Siri and Alexa were revolutionary? These assistants can set timers and tell us the weather, but today's AI capabilities enable us to build something far more powerful. I recently created a voice AI assistant that can manage my calendar, handle complex scheduling, and maintain natural conversations - all while sounding remarkably human thanks to ElevenLabs' voice synthesis.
-
-In this guide, I'll walk you through building your own voice AI assistant that can manage your calendar, handle meeting scheduling, and interact naturally with callers. We'll combine the power of ElevenLabs for voice AI, Twilio for phone communication, and n8n for backend automation.
 
 ## System Overview
 
